@@ -1,0 +1,20 @@
+{
+	"dependencies": {
+		"express": "^4.21.1",
+		"mongoose": "^8.8.0"
+	},
+	"name": "node-app",
+	"version": "1.0.0",
+	"description": "trail",
+	"main": "app.js",
+	"devDependencies": {
+		"@types/express": "^5.0.0",
+		"@types/mongoose": "^5.11.97",
+		"nodemon": "^3.1.7"
+	},
+	"scripts": {
+		"start1": "nodemon server.js"
+	},
+	"author": "",
+	"license": "ISC"
+}
