@@ -1,11 +1,18 @@
-let bodyObj = document.querySelector("body");
+let bodyObj = document.querySelector(".flag-cont");
 let inpObj = document.querySelector("input");
 let btnObj = document.querySelector("button");
 
 function generateFlag(code) {
 	let url = `https://restcountries.com/v3.1/alpha/${code}`;
 
-	let flagImg = (url) => `<img src="${url}" alt="" class="">`;
+	let flagImg = (url) => `<div class="flag">
+				<img
+					class="flag-img"
+					src="${url}"
+					alt=""
+					class=""
+				/>
+			</div>`;
 
 	let p = fetch(url)
 		.then(function (full, rej) {
